@@ -1,0 +1,21 @@
+{
+  "name": "ocaml-decoders",
+  "version": "0.1.0",
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+      // add your bs-dependencies here
+  ],
+  "bsc-flags": ["-pp", "\"cppo -D \\\"IS_BUCKLESCRIPT 1\\\"\""],
+  "warnings": {
+    "error" : "+101"
+  },
+  "refmt": 3
+}

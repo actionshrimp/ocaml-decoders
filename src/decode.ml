@@ -1,4 +1,7 @@
 (** Functors for creating Decoders. *)
+#ifdef IS_BUCKLESCRIPT
+  type ('good, 'bad) result = ('good, 'bad) Belt.Result.t
+#endif
 
 type 'value exposed_error =
   | Decoder_error of string * 'value option
